@@ -4,7 +4,7 @@ Official code release for the paper (https://arxiv.org/abs/2204.04908)
 
 ## Usage
 
-### 1. Notebook for spatially Conditioned Image Generation (VQGAN+CLIP)
+### 1. Notebook for spatially Conditioned Image Generation
 <p align="left">
   <img src="imgs/spatial_conditioning_git.jpg" width="800">
 </p>
@@ -12,7 +12,7 @@ Official code release for the paper (https://arxiv.org/abs/2204.04908)
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-### 2. Notebook for image Editing (StyleCLIP)
+### 2. Notebook for image Editing
 <p align="left">
   <img src="imgs/image_manipulation.jpg" width="800">
 </p>
@@ -20,7 +20,7 @@ Official code release for the paper (https://arxiv.org/abs/2204.04908)
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-### 3. Notebook for image Generation (FuseDream)
+### 3. Notebook for image Generation
 <p align="left">
   <img src="imgs/image_generation.jpg" width="800">
 </p>
