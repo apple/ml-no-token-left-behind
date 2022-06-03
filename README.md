@@ -62,7 +62,7 @@ python external/CoOp/train.py --root <dataset_root> --trainer CoOp --dataset-con
 ## Acknowledements
 * Image manipulation code is based on [StyleCLIP](https://github.com/orpatashnik/StyleCLIP)
 * Image generation code is based on [FuseDream](https://github.com/gnobitab/FuseDream)
-* Image generation with patial conditioning code is based on [VQGAN+CLIP](https://colab.research.google.com/drive/1ZAus_gn2RhTZWzOWUpPERNC0Q8OhZRTZ#scrollTo=VA1PHoJrRiK9) and [VQGAN](https://github.com/CompVis/taming-transformers)
+* Image generation with spatial conditioning code is based on [VQGAN+CLIP](https://colab.research.google.com/drive/1ZAus_gn2RhTZWzOWUpPERNC0Q8OhZRTZ#scrollTo=VA1PHoJrRiK9) and [VQGAN](https://github.com/CompVis/taming-transformers)
 * Prompt engineering code is based on [CoOp](https://github.com/KaiyangZhou/CoOp) and [Dassl](https://github.com/KaiyangZhou/Dassl.pytorch)
 * Explainability method code is based on [Transformer-MM-Explainability](https://github.com/hila-chefer/Transformer-MM-Explainability)
 ## License
