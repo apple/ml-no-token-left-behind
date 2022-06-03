@@ -308,7 +308,6 @@ class CoOp(TrainerX):
 
         print(f"Loading CLIP (backbone: {cfg.MODEL.BACKBONE.NAME})")
         clip_model = load_clip_to_cpu(cfg)
-        # clip_model = clip.load('ViT-B/32', jit=False, device='cpu')[0].eval()
 
         if cfg.TRAINER.COOP.PREC == "fp32" or cfg.TRAINER.COOP.PREC == "amp":
             # CLIP's default precision is fp16
@@ -318,7 +317,6 @@ class CoOp(TrainerX):
         self.model = CustomCLIP(cfg, classnames, clip_model)
 
         print("Turning off gradients in both the image and the text encoder")
-        # TODO: clip needs to require grad for expl loss
         for name, param in self.model.named_parameters():
             if "prompt_learner" not in name:
                 param.requires_grad_(False)
@@ -350,9 +348,8 @@ class CoOp(TrainerX):
         if prec == "amp":
             with autocast():
                 output, classes_expl_scores_max = self.model(image, return_expl=True)
-                ce_loss = F.cross_entropy(output, label)
-                expl_loss = 0
-                loss = ce_loss #+ expl_loss * self.model.module.expl_loss_weight
+                loss = F.cross_entropy(output, label)
+                
             self.optim.zero_grad()
             self.scaler.scale(loss).backward()
             self.scaler.step(self.optim)
