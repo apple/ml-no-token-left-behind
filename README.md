@@ -1,6 +1,4 @@
-# [No Token Left Behind: Explainability-Aided Image Classification and Generation]
-
-Official code release for the paper (https://arxiv.org/abs/2204.04908) 
+# PyTorch Implementation of [No Token Left Behind: Explainability-Aided Image Classification and Generation](https://arxiv.org/abs/2204.04908)
 
 ## Usage
 
